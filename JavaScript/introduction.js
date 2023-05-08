@@ -19,12 +19,12 @@
 
 var a = 10;
 // a = "Shivaji Singh";
-
+console.log(a);
 if(a === 10){
-    console.log('a is equals to 10')
+    console.log('a is equal to 10')
 }
 else{
-    console.log('a is equals to 10')
+    console.log('a is not equal to 10')
 }
 // let r = Symbol('any random messages');
 // var x = null;
