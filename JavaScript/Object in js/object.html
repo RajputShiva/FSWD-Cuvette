@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object in js</title>
+  </head>
+  <body>
+    <h1>Object Operations</h1>
+
+    <script>
+      // creating an objects
+      // let ob = {
+      //     // key : value
+      //    name : 'Shiavji Singh',
+      //    Age : 27,
+      //    Address : 'Delhi',
+      //    Phone : 9893,
+      // };
+
+      // console.log(ob);
+      // console.log(typeof ob);
+
+      let ob = {
+        // key : value
+        Name: "Shiavji Singh",
+        Age: 27,
+        Address: "Delhi",
+        Phone: 9893,
+
+        // its a behaviour
+        //    display : function(){
+
+        //     console.log("display properties..");
+        //     console.log(this.name);
+        //     console.log(this.Age);
+        //     console.log(this.Address);
+        //    }
+      };
+      // print all using forin loop
+      // for (const key in ob) {
+      //     //console.log(key); // all key aa gaya
+      //     console.log(key+" : "+ob[key]); // object[key] likhane se key ke sare value print ho gye
+      // }
+
+      // console.log(ob);
+      // console.log(typeof ob);
+
+      // display function call here
+      //ob.display();
+      // ob["dispay"](); // function call aise bhi kr skte hain  object["functionName"](); aur function call ho jayega.
+
+      // accessing the properties of object
+
+      // console.log(ob.name);
+      // console.log(ob.Address);
+
+      // or
+
+      //  console.log(ob["name"]);
+      //  console.log(ob["Phone"]);
+
+      // changing values of property
+      console.log(ob.Name);
+      ob.Name = "Rajput Singh";
+      console.log(ob.Name); // changed name
+
+      //dynamic adding properties
+      ob["Email"] = "shivajisingh54@gmail.com";
+      console.log(ob);
+
+      // deleting property
+      delete ob["Address"];
+      console.log(ob);
+    </script>
+  </body>
+</html>
